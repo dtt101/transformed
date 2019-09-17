@@ -1,9 +1,7 @@
-import PropTypes from "prop-types"
 import React from "react"
-import { Heading, Link } from "rebass"
-import { ThemeProvider } from "emotion-theming"
+import { Heading, Link, Text } from "rebass"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
     <Link
       href="/"
@@ -13,18 +11,16 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <Heading as="h1" fontSize={[5, 6, 7]}>
-        {siteTitle}
+        transform
+        <Text
+          color="text"
+          sx={{ display: "inline", backgroundColor: "highlight" }}
+        >
+          ed
+        </Text>
+        .digital
       </Heading>
     </Link>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
 export default Header

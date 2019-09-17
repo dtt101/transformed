@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Box } from "rebass"
-import { useStaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from "emotion-theming"
 import preset from "@rebass/preset"
 
@@ -20,16 +19,6 @@ const theme = {
 }
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <ThemeProvider theme={theme}>
       <Box
@@ -45,7 +34,7 @@ const Layout = ({ children }) => {
             p: 3,
           }}
         >
-          <Header siteTitle={data.site.siteMetadata.title} />
+          <Header />
         </Box>
         <Box
           sx={{
@@ -60,11 +49,7 @@ const Layout = ({ children }) => {
             p: 3,
           }}
         >
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <footer>© {new Date().getFullYear()}</footer>
         </Box>
       </Box>
     </ThemeProvider>
