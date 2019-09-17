@@ -9,9 +9,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Box } from "rebass"
 import { useStaticQuery, graphql } from "gatsby"
+import { ThemeProvider } from "emotion-theming"
+import preset from "@rebass/preset"
 
 import Header from "./header"
 import "./layout.css"
+
+const theme = {
+  ...preset,
+}
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,8 +31,9 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Box
+        variant="styles.root"
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -60,7 +67,7 @@ const Layout = ({ children }) => {
           </footer>
         </Box>
       </Box>
-    </>
+    </ThemeProvider>
   )
 }
 
