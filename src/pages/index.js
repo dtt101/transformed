@@ -23,7 +23,11 @@ const IndexPage = () => (
       <input type="hidden" value="1" name="embed" />
       <input type="submit" value="Subscribe" />
       <p>
-        <a href="https://buttondown.email" target="_blank">
+        <a
+          href="https://buttondown.email"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Powered by Buttondown.
         </a>
       </p>
