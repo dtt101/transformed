@@ -12,25 +12,21 @@ const IndexPage = () => (
     </p>
     <p>Now go build something great.</p>
     <form
-      style={{ border: "1px solid #ccc", padding: "3px", textAlign: "center" }}
-      action="https://tinyletter.com/transformed"
+      action="https://buttondown.email/api/emails/embed-subscribe/transformed"
       method="post"
       target="popupwindow"
-      onsubmit="window.open('https://tinyletter.com/transformed', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+      onsubmit="window.open('https://buttondown.email/transformed', 'popupwindow')"
+      class="embeddable-buttondown-form"
     >
-      <p>
-        <label for="tlemail">Enter your email address</label>
-      </p>
-      <p>
-        <input
-          type="text"
-          style={{ width: "140px" }}
-          name="email"
-          id="tlemail"
-        />
-      </p>
+      <label for="bd-email">Enter your email</label>
+      <input type="email" name="email" id="bd-email" />
       <input type="hidden" value="1" name="embed" />
       <input type="submit" value="Subscribe" />
+      <p>
+        <a href="https://buttondown.email" target="_blank">
+          Powered by Buttondown.
+        </a>
+      </p>
     </form>
   </Layout>
 )
