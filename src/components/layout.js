@@ -12,10 +12,20 @@ import { ThemeProvider } from "emotion-theming"
 import preset from "@rebass/preset"
 
 import Header from "./header"
-import "./layout.css"
 
 const theme = {
   ...preset,
+  ...{
+    colors: {
+      background: "#3ee9c5",
+      gray: "#e9eeed",
+      highlight: "hsla(205, 100%, 40%, 0.125)",
+      muted: "#f3b096",
+      primary: "#e93eb9",
+      secondary: "#3ee96e",
+      text: "#c51c3d",
+    },
+  },
 }
 
 const Layout = ({ children }) => {
@@ -27,6 +37,9 @@ const Layout = ({ children }) => {
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
+          color: "text",
+          backgroundColor: "background",
+          margin: "-8px",
         }}
       >
         <Box
