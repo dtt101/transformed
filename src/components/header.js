@@ -2,7 +2,7 @@ import React from "react"
 import { Heading, Link, Text } from "rebass"
 
 const Header = () => (
-  <header>
+  <Box>
     <Link
       href="/"
       sx={{
@@ -21,6 +21,6 @@ const Header = () => (
         .digital
       </Heading>
     </Link>
-  </header>
+  </Box>
 )
 export default Header
