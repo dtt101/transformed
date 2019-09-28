@@ -1,8 +1,8 @@
 import React from "react"
-import { Heading, Link, Text } from "rebass"
+import { Box, Heading, Link, Text } from "rebass"
 
 const Header = () => (
-  <Box>
+  <Box as="header" p={[1, 2, 4]}>
     <Link
       href="/"
       sx={{
@@ -10,7 +10,7 @@ const Header = () => (
         color: "text",
       }}
     >
-      <Heading as="h1" fontSize={[5, 6, 7]}>
+      <Heading as="h1" fontSize={[5, 7, 8]} mt={[2, 3, 5]}>
         transform
         <Text
           color="text"

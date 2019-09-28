@@ -19,11 +19,11 @@ const theme = {
     colors: {
       background: "#3ee9c5",
       gray: "#e9eeed",
-      highlight: "hsla(205, 100%, 40%, 0.125)",
+      highlight: "hsla(200, 0.10%, 0.2%, 0.125)",
       muted: "#f3b096",
       primary: "#e93eb9",
       secondary: "#3ee96e",
-      text: "#c51c3d",
+      text: "#004466",
     },
   },
 }
@@ -55,14 +55,18 @@ const Layout = ({ children }) => {
             p: 3,
           }}
         >
-          <main>{children}</main>
+          <Box as="main" p={[1, 2, 4]}>
+            {children}
+          </Box>
         </Box>
         <Box
           sx={{
             p: 3,
           }}
         >
-          <footer>© {new Date().getFullYear()}</footer>
+          <Box as="footer" p={[1, 2, 4]}>
+            © {new Date().getFullYear()}
+          </Box>
         </Box>
       </Box>
     </ThemeProvider>
