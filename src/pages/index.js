@@ -50,7 +50,7 @@ const IndexPage = () => (
         at the University of York, formerly Director of Digital Products at the
         Raspberry Pi Foundation and Principal Engineer at Sky.
       </Text>
-      <Box mt={4}>
+      <Box mb={3}>
         <Text>
           Your information will not be shared, and only used to send the regular
           newsletter.
