@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Box } from "rebass"
+import { Box, Text, Link } from "rebass"
 import { ThemeProvider } from "emotion-theming"
 import preset from "@rebass/preset"
 
@@ -65,7 +65,18 @@ const Layout = ({ children }) => {
           }}
         >
           <Box as="footer" p={[1, 2, 4]}>
-            © {new Date().getFullYear()}
+            <Text>
+              © <Link href="https://twitter.com/versusg">David Thompson</Link>{" "}
+              {new Date().getFullYear()}.
+            </Text>
+            <Text>
+              <span role="img" aria-label="heart">
+                ❤️
+              </span>
+              to <Link href="http://gatsbyjs.org">Gatsby</Link>,{" "}
+              <Link href="http://rebassjs.org">Rebass</Link> and{" "}
+              <Link href="https://emotion.sh">Emotion</Link>.
+            </Text>
           </Box>
         </Box>
       </Box>

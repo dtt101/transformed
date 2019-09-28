@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@rebass/forms": "^4.0.6",
     "@rebass/preset": "^4.0.5",
     "emotion-theming": "^10.0.18",
     "gatsby": "^2.15.16",
