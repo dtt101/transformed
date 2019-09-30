@@ -73,8 +73,9 @@ const Layout = ({ children }) => {
               <span role="img" aria-label="heart">
                 ❤️
               </span>
-              to <Link href="http://gatsbyjs.org">Gatsby</Link>,{" "}
-              <Link href="http://rebassjs.org">Rebass</Link> and{" "}
+              to <Link href="https://gatsbyjs.org">Gatsby</Link>,{" "}
+              <Link href="https://buttondown.email">Buttondown</Link>,{" "}
+              <Link href="https://rebassjs.org">Rebass</Link> and{" "}
               <Link href="https://emotion.sh">Emotion</Link>.
             </Text>
           </Box>
