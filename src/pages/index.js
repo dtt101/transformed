@@ -1,9 +1,9 @@
 import React from "react"
+import { Box, Text, Button, Link } from "rebass"
+import { Input } from "@rebass/forms"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Box, Text, Button } from "rebass"
-import { Input } from "@rebass/forms"
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +22,13 @@ const IndexPage = () => (
       </Text>
       <Text fontSize={3}>
         Sign up to get the latest news, articles and links.
+      </Text>
+      <Text fontSize={3}>
+        To get an idea of the format you can{" "}
+        <Link href="https://buttondown.email/transformed/archive/">
+          read past newsletters online
+        </Link>
+        .
       </Text>
       <Box mb={5}>
         <form
@@ -48,7 +55,9 @@ const IndexPage = () => (
       <Text mb={4}>
         It is curated by David Thompson, currently Head of Software Development
         at the University of York, formerly Director of Digital Products at the
-        Raspberry Pi Foundation and Principal Engineer at Sky.
+        Raspberry Pi Foundation and Principal Engineer at Sky. This is not an
+        official University of York publication and all opinions within are my
+        own.
       </Text>
       <Box mb={3}>
         <Text>
