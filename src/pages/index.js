@@ -38,7 +38,7 @@ const IndexPage = () => (
           onsubmit="window.open('https://buttondown.email/transformed', 'popupwindow')"
           class="embeddable-buttondown-form"
         >
-          <Label htmlFor="email" mt={4} mb={2} fontSize={3} color="text">
+          <Label htmlFor="bd-email" mt={4} mb={2} fontSize={3} color="text">
             Email
           </Label>
           <Input
