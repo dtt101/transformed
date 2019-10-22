@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Text, Button, Link } from "rebass"
-import { Input } from "@rebass/forms"
+import { Input, Label } from "@rebass/forms"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -38,8 +38,11 @@ const IndexPage = () => (
           onsubmit="window.open('https://buttondown.email/transformed', 'popupwindow')"
           class="embeddable-buttondown-form"
         >
+          <Label htmlFor="email" mt={4} mb={2} fontSize={3} color="text">
+            Email
+          </Label>
           <Input
-            my={4}
+            mb={4}
             maxWidth={450}
             type="email"
             name="email"
